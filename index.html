@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang=en_US>
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Mirror Code" />
+    <meta name="description" content="Admin dashboard" />
+    <meta name="keywords" content="admin, dashboard, manage, maintance" />
+    <meta name="robots" content="index, fallow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body id="main">
+    <div class="container">
+        <div class="light-bar">
+            <div class="grid-4 main-logo">
+                <span onclick="openNav()">&#9776;</span>
+                <img src="images/logo.png" />
+            </div>
+            <div class="grid-4 input-box">
+                Search:
+                <input type="text" name="search">
+            </div>
+            <div class="grid-4 log-out">
+                <a href="#">John Doe</a>
+                <a href="#"><img src="images/icon-user-default.png"></a>
+                <button><a href="#">Log Out</a></button>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <ul>
+                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Appearance</a></li>
+                <ul>
+                    <li><a href="#">Plugins</a></li>
+                    <br />
+                    <ul>
+                        <li><a href="#">WP rocket</a></li>
+                        <br />
+                        <li><a href="#">Revolution Slider</a></li>
+                        <br />
+                        <li><a href="#">Yoast SEO</a></li>
+                        <br />
+                    </ul>
+                </ul>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="grid-12 content-right-1">
+            <form>
+                <p>Site Name:
+                    <input type="text" name="name" class="input-field">
+                </p>
+                <p>Chose domen:
+                    <input type="radio" name="domen" value=".com" checked> .com
+                    <input type="radio" name="domen" value=".org"> .org
+                    <input type="radio" name="domen" value=".edu"> .edu</p>
+                <p>Chose package:
+                    <select name="package" class="input-select">
+                        <option value="Starter">Starter</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Premium">Premium</option>
+                    </select>
+                </p>
+                <p>Include:
+                    <input type="checkbox" name="service" value="Support"> Support
+                    <input type="checkbox" name="service" value="Maintence"> Maintence
+                    <input type="checkbox" name="service" value="Resell" checked> Resell</p>
+                <p>Message:</p>
+                <textarea name="message" rows="5" cols="20" class="input-textarea"></textarea>
+                <br>
+                <button type="button" class="input-button">Submit</button>
+            </form>
+        </div>
+
+        <div class="grid-12 content-right-2">
+            <table>
+                <tr>
+                    <th>Website</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>mirrorcode.com</td>
+                    <td>Danijel Djordjevic</td>
+                    <td>Serbia</td>
+                </tr>
+                <tr>
+                    <td>facebook.com</td>
+                    <td>Mark Zukemberg</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>twitter.com</td>
+                    <td>Jack Dorsey</td>
+                    <td>USA</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="grid-12">
+            <p>© 2017 MIRROR CODE. ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

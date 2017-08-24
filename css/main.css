@@ -1,0 +1,463 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic&subset=latin,latin-ext);
+body {
+    font-family: 'Lato', sans-serif;
+    background: url("../images/body-background.png") no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.grid-3 {
+    width: 25%;
+    float: left;
+}
+
+.grid-4 {
+    width: 33%;
+    float: left;
+}
+
+.grid-6 {
+    width: 50%;
+    float: left;
+}
+
+.grid-8 {
+    width: 67%;
+    float: left;
+}
+
+.grid-9 {
+    width: 75%;
+    float: left;
+}
+
+.grid-12 {
+    width: 100%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #777;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.light-bar {
+    background-color: #C6DEFF;
+    height: 100px;
+    color: #fff;
+}
+
+.main-logo {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.main-logo span {
+    color: #747474;
+    font-size: 32px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.main-logo span:hover {
+    color: #fff;
+}
+
+.main-logo img {
+    padding-top: 13px;
+    padding-left: 15px;
+    width: 185px;
+    height: 65px;
+}
+
+.input-box {
+    color: #747474;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.input-box input {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #747474;
+    border-radius: 5px;
+}
+
+.log-out {
+    padding-top: 35px;
+    text-align: right;
+}
+
+.log-out button {
+    color: #747474;
+    font-size: 20px;
+    padding: 5px;
+    width: 30%;
+    box-shadow: 3px 3px 3px #888;
+    border: 1px solid #747474;
+    border-radius: 5px;
+    background-color: #C6DEFF;
+}
+
+.log-out button:hover {
+    border: 1px solid #fff;
+    background-color: #747474;
+}
+
+.log-out button:hover a {
+    color: #fff;
+}
+
+.log-out button a {
+    margin-right: 0;
+}
+
+.log-out a {
+    color: #747474;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.log-out img {
+    width: 40px;
+    margin-top: -5px;
+    vertical-align: middle;
+    border: 1px solid #888;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #888;
+}
+
+.log-out img:hover {
+    border: 1px solid #fff;
+}
+
+.content-right-2 {
+    margin-bottom: 15%;
+}
+
+footer {
+    text-align: center;
+    background-color: #d9d9d9;
+    color: #747474;
+    font-size: 18px;
+    font-weight: 400;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+footer p:hover {
+    color: #000;
+}
+
+.content-right-1 form {
+    border: 1px solid #000;
+    color: #747474;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    width: 385px;
+    background-color: #f1f1f1;
+    box-shadow: 3px 3px 3px #888;
+}
+
+form p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.input-field {
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.input-select {
+    color: #747474;
+    font-size: 18px;
+    padding: 5px;
+    margin-left: 10px;
+    width: 49%;
+}
+
+.input-textarea {
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+    width: 97%;
+    max-width: 97%;
+}
+
+.input-button {
+    color: #747474;
+    font-size: 20px;
+    padding: 5px;
+    width: 30%;
+    box-shadow: 3px 3px 3px #888;
+    border: 1px solid #747474;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #C6DEFF;
+}
+
+.input-button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #747474;
+}
+
+.content-right-2 table {
+    color: #747474;
+    border: 1px solid #000;
+    padding: 15px;
+    font-size: 22px;
+    line-height: 2;
+    text-align: center;
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    width: 90%;
+    max-width: 1300px;
+    background-color: #f1f1f1;
+    box-shadow: 3px 3px 3px #888;
+}
+
+td,
+th {
+    border: 1px solid #000;
+}
+
+th {
+    background-color: #C6DEFF;
+}
+
+.sidenav ul {
+    list-style: none;
+}
+
+@media (max-width: 930px) {
+    .input-box {
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 853px) {
+    .closebtn {
+        right: 10px;
+        font-size: 30px
+    }
+    .sidenav a {
+        font-size: 16px;
+    }
+    .main-logo span {
+        font-size: 30px;
+    }
+    .input-box {
+        padding-top: 20px;
+        font-size: 18px;
+        width: 25%;
+    }
+    .input-box input {
+        font-size: 14px;
+        margin-left: 0px;
+    }
+    .log-out {
+        text-align: right;
+        width: 40%;
+        float: right;
+        padding-top: 35px;
+    }
+    .log-out a {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    .log-out img {
+        width: 30px;
+        height: auto;
+        margin-right: 0px;
+    }
+    .log-out button {
+        font-size: 16px;
+        margin-right: 8px;
+    }
+    .content-right-1 form {
+        margin-left: auto;
+    }
+    .content-right-2 table {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .log-out {
+        width: 36%;
+        padding-top: 15px;
+    }
+    .log-out img {
+        margin-right: 10px;
+    }
+    .log-out button {
+        width: 60%;
+        margin-right: 8px;
+        margin-top: 10px;
+    }
+    .main-logo img {
+        width: 100px;
+        height: 40px;
+        padding-top: 30px;
+    }
+    .main-logo span {
+        padding-top: 30px;
+    }
+    .content-right-2 {
+        margin-bottom: 30%;
+    }
+    td,
+    th {
+        word-break: break-all;
+        font-size: 16px;
+    }
+    .content-right-1 form {
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+    }
+    form p {
+        font-size: 14px;
+    }
+    .input-field {
+        font-size: 14px;
+    }
+    .input-select {
+        font-size: 14px;
+    }
+    .input-textarea {
+        font-size: 14px;
+    }
+    .input-button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .log-out {
+        width: 36%;
+        padding-top: 20px;
+    }
+    .log-out button {
+        margin-top: 7px;
+    }
+    .input-box input {
+        font-size: 12px;
+    }
+    .main-logo img {
+        width: 70px;
+        height: 30px;
+        padding-top: 30px;
+    }
+    .main-logo span {
+        padding-left: 5px;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .main-logo {
+        margin-right: 15px;
+    }
+    .input-box input {
+        width: 100px;
+    }
+    .content-right-1 form {
+        max-width: 260px;
+        margin-left: auto;
+    }
+    form p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .input-field {
+        font-size: 12px;
+    }
+    .input-select {
+        font-size: 12px;
+    }
+    .input-textarea {
+        font-size: 12px;
+    }
+    .input-button {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 386px) {
+    .log-out {
+        padding-top: 5px;
+    }
+    .log-out img {
+        margin-top: 1px;
+        margin-right: 28px;
+    }
+    .log-out button {
+        width: 65%;
+    }
+    .content-right-1 form {
+        max-width: 200px;
+    }
+    td,
+    th {
+        font-size: 13px;
+    }
+}
